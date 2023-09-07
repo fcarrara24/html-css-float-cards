@@ -1,0 +1,76 @@
+/* geneerals and utility */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-title-color: #e53170;
+    --box-color: #0f0e17;
+    --link-before-color: #31c7e5;
+    --boxes-per-row: 3;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.debug{
+    color: green;
+    background-color: red;
+}
+
+/* text utility */
+.align-center{
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* header */
+header>h1{
+    text-align: justify;
+    font-size:2em;
+    margin-bottom: 30px;
+}
+
+main > p{
+    padding: 30px 0;
+    margin:10px;
+    
+    
+}
+
+/* p, .box{
+    padding: 10px
+} */
+.box{
+    display: inline-block;
+    width: calc((100% / var(--boxes-per-row)) - 20px);
+    margin: 10px;
+    border:1px solid white;
+    background-color: var(--box-color);
+    color: white;
+}
+
+img{
+    padding-right: 10px;
+    width: 70px;
+    float: left;
+}
+
+.m-left{
+    margin-left: 0;
+}
+
+header{
+    color: var(--header-title-color);
+    font-weight: bolder;
+}
