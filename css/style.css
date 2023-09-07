@@ -87,3 +87,13 @@ a{
 h3{
     font-family: 'Fredoka', sans-serif;
 }
+
+/* extra */
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #800080;
+}
